@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens Incríveis | Agência de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo (2).jpeg">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#inicio" class="logo">
+                    <img src="img/logo (2).jpeg" alt="Viagens Incríveis Logo">
+                </a>
+                
+
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="#inicio" class="active">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="contact-info">
+                    <div class="phone">
+                        <i class="fas fa-phone"></i>
+                        <span>+55 (11) 3456-0000</span>
+                    </div>
+                    <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu de navegação">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="nav-mobile" id="mobileMenu">
+            <div class="container">
+                <ul>
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="phone mobile">
+                    <i class="fas fa-phone"></i>
+                    <span>+55 (11) 3456-0000</span>
+                </div>
+                <a href="#contato" class="btn btn-primary mobile-btn">Solicitar Orçamento</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Descubra o mundo com a <span>Viagens Incríveis</span></h1>
+                    <p>Oferecemos experiências de viagem personalizadas para destinos exclusivos ao redor do mundo.</p>
+                    <div class="hero-buttons">
+                        <a href="#servicos" class="btn btn-primary">
+                            Nossos Serviços <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contato" class="btn btn-outline">Entre em Contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre Nós</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">A Viagens Incríveis é uma agência de viagens premium fundada em 2010 com o objetivo de proporcionar experiências únicas e memoráveis para nossos clientes.</p>
+                        
+                        <h3>Nossa Missão</h3>
+                        <p>Ajudar as pessoas a planejar viagens inesquecíveis, transformando sonhos em realidade através de roteiros personalizados e um atendimento excepcional do início ao fim da sua jornada.</p>
+                        
+                        <h3>Nossa Visão</h3>
+                        <p>Expandir globalmente, oferecendo pacotes personalizados que atendam às necessidades específicas de cada cliente, sempre com foco na qualidade e na experiência única.</p>
+                        
+                        <div class="stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>+5000 Clientes</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-globe"></i>
+                                <span>+100 Destinos</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>13 Anos</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="about-image">
+                        <img src="img/Designer.jpeg" alt="Nossa equipe">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="chatbot-container">
+            <button id="chatbot-toggle"> <h2></h2><i class="fas fa-comment"></i></button>
+            <div id="chatbot">
+                <div id="chatbot-header">
+                    <span>Assistente Virtual</span>
+                    <button id="chatbot-close">&times;</button>
+                </div>
+                <div id="chatbot-messages"></div>
+                <div id="chatbot-input-container">
+                    <input type="text" id="chatbot-input" placeholder="Digite sua mensagem...">
+                    <button id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section id="servicos" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Serviços</h2>
+                    <div class="divider"></div>
+                    <p>Oferecemos uma ampla gama de serviços para tornar sua viagem perfeita do início ao fim.</p>
+                </div>
+
+                <div class="tabs">
+                    <div class="tab-header">
+                        <button class="tab-btn active" data-tab="pacotes">Pacotes de Viagem</button>
+                        <button class="tab-btn" data-tab="hospedagem">Hospedagem</button>
+                        <button class="tab-btn" data-tab="experiencias">Experiências</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- Pacotes Tab -->
+                        <div class="tab-pane active" id="pacotes">
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/praias.jpg" alt="Praias paradisíacas">
+                                        <div class="card-tag">Destaque</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Pacotes Nacionais</h3>
+                                        <p class="card-subtitle">Conheça as maravilhas do Brasil</p>
+                                        <p>Pacotes completos incluindo passagens, hospedagem, traslados e passeios para os melhores destinos do Brasil.</p>
+                                        <a href="#" class="btn btn-primary btn-block">Saiba Mais</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/europa.webp" alt="Cidades europeias">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Pacotes Internacionais</h3>
+                                        <p class="card-subtitle">Explore destinos pelo mundo</p>
+                                        <p>Viagens internacionais com tudo incluso: passagens aéreas, hotéis, seguro viagem e roteiros exclusivos.</p>
+                                        <a href="#" class="btn btn-primary btn-block">Saiba Mais</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/cruzeiros.webp" alt="Cruzeiro marítimo">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Cruzeiros</h3>
+                                        <p class="card-subtitle">Navegue em alto mar com conforto</p>
+                                        <p>Cruzeiros marítimos para diversos destinos, com entretenimento a bordo, gastronomia de primeira e paradas estratégicas.</p>
+                                        <a href="#" class="btn btn-primary btn-block">Saiba Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hospedagem Tab -->
+                        <div class="tab-pane" id="hospedagem">
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/resorts.jpg" alt="Resort de luxo">
+                                        <div class="card-tag">Premium</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Resorts All-Inclusive</h3>
+                                        <p class="card-subtitle">Conforto e lazer completos</p>
+                                        <p>Hospedagem em resorts com tudo incluso: alimentação, bebidas, atividades recreativas e muito mais.</p>
+                                        <a href="#" class="btn btn-primary btn-block">Ver Opções</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/hotel botique.jpg" alt="Hotel boutique">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Hotéis Boutique</h3>
+                                        <p class="card-subtitle">Experiências exclusivas</p>
+                                        <p>Hotéis menores com atendimento personalizado, design único e localizações privilegiadas nas melhores cidades.</p>
+                                        <a href="#" class="btn btn-primary btn-block">Ver Opções</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/apartamento.jpg" alt="Apartamento para aluguel">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Apartamentos e Casas</h3>
+                                        <p class="card-subtitle">Sinta-se em casa</p>
+                                        <p>Aluguel de apartamentos e casas completas para quem busca mais espaço, privacidade e a experiência de viver como um local.</p>
+                                        <a href="#" class="btn btn-primary btn-block">Ver Opções</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experiências Tab -->
+                        <div class="tab-pane" id="experiencias">
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/tourgastro.webp" alt="Tour gastronômico">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Tours Gastronômicos</h3>
+                                        <p class="card-subtitle">Sabores do mundo</p>
+                                        <p>Experiências culinárias guiadas por especialistas locais, com degustação de pratos típicos e visitas a mercados tradicionais.</p>
+                                        <a href="#" class="btn btn-primary btn-block">Descobrir</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/natureza.webp" alt="Aventura na natureza">
+                                        <div class="card-tag">Aventura</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Aventuras na Natureza</h3>
+                                        <p class="card-subtitle">Adrenalina e paisagens</p>
+                                        <p>Atividades como trekking, rafting, mergulho e escalada em cenários naturais deslumbrantes ao redor do mundo.</p>
+                                        <a href="#" class="btn btn-primary btn-block">Descobrir</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/culturais.jpg" alt="Tour cultural">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Imersão Cultural</h3>
+                                        <p class="card-subtitle">História e tradições</p>
+                                        <p>Tours culturais com guias especializados, visitas a museus, monumentos históricos e participação em festivais locais.</p>
+                                        <a href="#" class="btn btn-primary btn-block">Descobrir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Entre em Contato</h2>
+                    <div class="divider"></div>
+                    <p>Estamos prontos para ajudar a planejar sua próxima aventura. Entre em contato conosco!</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <h3>Envie uma mensagem</h3>
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nome</label>
+                                    <input type="text" id="name" placeholder="Seu nome completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="seu@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" placeholder="(00) 00000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" placeholder="Descreva como podemos ajudar você" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                        </form>
+
+
+                        
+                        <!-- Mensagem de sucesso (inicialmente oculta) -->
+                        <div id="successMessage" class="success-message">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Mensagem enviada com sucesso!</h4>
+                            <p>Obrigado pelo seu contato. Nossa equipe entrará em contato com você em breve.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-container">
+                        <div class="contact-details">
+                            <h3>Informações de Contato</h3>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Endereço</h4>
+                                    <p>Av. Paulista, 1000 - Bela Vista</p>
+                                    <p>São Paulo - SP, 01310-100</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Telefone</h4>
+                                    <p>+55 (11) 3456-0000</p>
+                                    <p>+55 (11) 98765-9999</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:contato@viagensincrives.com.br">contato@viagensincrives.com.br</a></p>
+                                    <p><a href="mailto:reservas@viagensincrives.com.br">reservas@viagensincrives.com.br</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="business-hours">
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta: 9h às 18h</p>
+                            <p>Sábado: 9h às 13h</p>
+                            <p>Domingo e Feriados: Fechado</p>
+                        </div>
+
+                        <div class="social-media">
+                            <h3>Siga-nos</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="img/logo (2).jpeg" alt="Viagens Incríveis Logo" class="footer-logo" style="border-radius: 45px;">
+                    <p>Transformando sonhos em viagens inesquecíveis desde 2010.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-destinations">
+                    <h4>Destinos Populares</h4>
+                    <ul>
+                        <li><a href="#">Paris, França</a></li>
+                        <li><a href="#">Tóquio, Japão</a></li>
+                        <li><a href="#">Nova York, EUA</a></li>
+                        <li><a href="#">Fernando de Noronha, Brasil</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Inscreva-se para receber ofertas exclusivas e novidades.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Seu email" aria-label="Seu email para newsletter">
+                        <button class="btn btn-secondary">Inscrever</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Viagens Incríveis. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
