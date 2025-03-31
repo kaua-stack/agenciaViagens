@@ -302,7 +302,7 @@ h4 {
 .hero {
   position: relative;
   height: 80vh;
-  background-image: url("/img/fundo5.webp");
+  background-image: url("img/fundo5.webp");
   background-size: cover;
   background-position: center;
   color: var(--white);
